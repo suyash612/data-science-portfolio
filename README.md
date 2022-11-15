@@ -1,5 +1,9 @@
 # Data Science Portfolio
 Portfolio of data science projects completed by me for self learning purpose
 
-Email: suyash.pawar612@gmail.com <br />
-LinkedIn: https://www.linkedin.com/in/suyashpawar612
+<b>Email</b>: suyash.pawar612@gmail.com <br />
+<b>LinkedIn</b>: https://www.linkedin.com/in/suyashpawar612
+
+## Projects
+  - Search engine for Question & Answering : Basic implementation and deployment of an ElasticSearch based solution
+    - Tool stack : Python, ElasticSearch, Docker, Language model (Universal Sentence Encoder)
