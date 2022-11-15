@@ -1,4 +1,7 @@
 # Search Engine for Question & Answering system
+## Project Structure
+![image](https://user-images.githubusercontent.com/89654615/201868784-49765b44-894f-415c-a9b9-0d48d11faf08.png)
+
 ## Problem Statement
 Given a question, we have to find similar questions from a repository of question & answers. A relevant example of where this is applicable is Stack overflow
 
