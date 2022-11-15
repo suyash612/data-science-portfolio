@@ -19,8 +19,16 @@ Tech Stack :
   - Flask for creating a web app of the solution
 
 ### Solution Architecture 
+There are 2 parts to the solution. One part involves indexing the 200K question information (title, title vectors) into ElasticSearch. The other part is about searching for the top similar questions to the query question.
+
 ![image](https://user-images.githubusercontent.com/89654615/201850777-d8902ceb-2b1a-4adf-b59c-eae291019ceb.png)
 
 ### Deployment Architecture 
 
+Two docker containers are used to deploy the solution. One docker container for running the ElasticSearch instance and the other for running the flask application. The flask application is the entrypoint of the solution
+
 ![image](https://user-images.githubusercontent.com/89654615/201852392-876c1cd9-d147-430b-98ea-aa95321f3dba.png)
+
+
+
+
