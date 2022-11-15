@@ -9,9 +9,9 @@ StackSample dataset from kaggle was used in this implementation and it contains 
 
 
 ## High Level Design
-The most important fields to find the similar question are the Title and the Body of the questions. In this implementation, we will consider only the title of the questions from the data store. We check combined similarity using keyword search as well as semantic similarity.
+The most important fields to find the similar question are the Title and the Body of the questions. In this implementation, we will consider only the title of the questions from the data store. We check combined similarity using keyword search as well as semantic similarity. Cosine similarity function within ElasticSearch is used for computing the similarity<br/>  
 Tech Stack :
   - ElasticSearch for storing the questions repository and retrieving top similar questions, to the query question
-  - Universal Sentence Encoder (USE) for generating title vectors/embeddings
+  - Pre-trained Universal Sentence Encoder (USE) for generating title vectors/embeddings
   - Docker for containerisation of the application  
   - Flask for creating a web app of the solution
