@@ -32,6 +32,3 @@ Two docker containers are used to deploy the solution. One docker container for 
 
 ![image](https://user-images.githubusercontent.com/89654615/201852392-876c1cd9-d147-430b-98ea-aa95321f3dba.png)
 
-
-
-
