@@ -6,3 +6,12 @@ Given a question, we have to find similar questions from a repository of questio
 
 ## Dataset
 StackSample dataset from kaggle was used in this implementation and it contains 10% of Stack Overflow Q&A : https://www.kaggle.com/datasets/stackoverflow/stacksample
+
+
+## High Level Design
+The most important fields to find the similar question are the Title and the Body of the questions. In this implementation, we will consider only the title of the questions from the data store. We check combined similarity using keyword search as well as semantic similarity.
+Tech Stack :
+  - ElasticSearch for storing the questions repository and retrieving top similar questions, to the query question
+  - Universal Sentence Encoder (USE) for generating title vectors/embeddings
+  - Docker for containerisation of the application  
+  - Flask for creating a web app of the solution
