@@ -32,3 +32,15 @@ Two docker containers are used to deploy the solution. One docker container for 
 
 ![image](https://user-images.githubusercontent.com/89654615/201852392-876c1cd9-d147-430b-98ea-aa95321f3dba.png)
 
+## Instructions for Running the project
+1. Build the elasticsearch docker image from the ./docker images/elasticsearch/ : docker build -t es_deploy .
+2. Run the elasticsearch docker image in a container : docker run --net=host -m 3G --publish 9200:9200 -e "discovery.type=single-node" --name es_deploy es_deploy 
+3. Build the flask application docker image from the root/outermost directory : docker build -t flask-app .
+4. Run the flask application docker image in a container : docker run --net=host flask-app
+
+Hit the flask app URL with the search query/question (Example below). The result will contain top matching questions through default keyword search (KW) and through semantic similarity respectively
+
+![image](https://user-images.githubusercontent.com/89654615/201875300-6453952c-a384-4345-bf79-90beec3efce4.png)
+
+
+
