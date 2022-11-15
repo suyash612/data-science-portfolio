@@ -20,3 +20,7 @@ Tech Stack :
 
 ### Solution Architecture 
 ![image](https://user-images.githubusercontent.com/89654615/201850777-d8902ceb-2b1a-4adf-b59c-eae291019ceb.png)
+
+### Deployment Architecture 
+
+![image](https://user-images.githubusercontent.com/89654615/201852392-876c1cd9-d147-430b-98ea-aa95321f3dba.png)
