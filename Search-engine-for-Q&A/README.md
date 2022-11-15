@@ -17,3 +17,6 @@ Tech Stack :
   - Pre-trained Universal Sentence Encoder (USE) for generating title vectors/embeddings
   - Docker for containerisation of the application  
   - Flask for creating a web app of the solution
+
+### Solution Architecture 
+![image](https://user-images.githubusercontent.com/89654615/201850777-d8902ceb-2b1a-4adf-b59c-eae291019ceb.png)
