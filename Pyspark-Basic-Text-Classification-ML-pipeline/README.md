@@ -14,7 +14,7 @@ The dataset has the following features :
 - Attribute Characteristics: Text
 - Associated Tasks: Multi-class Classification
 
-Link to dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification  
+Link to the dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification  
 
 
 ## High Level Design
