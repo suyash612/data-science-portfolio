@@ -1,20 +1,21 @@
-# Basic Text classification using PySpark ML Pipeline
+# Basic Regression using PySpark ML Pipeline
 ## Overview
-I have implemented a simple multi-class text classification solution using the pyspark machine learning pipeline component. 
+I have implemented a simple regression solution using the pyspark machine learning pipeline component. 
 
 ## Dataset
-Ecommerce text dataset from kaggle was used in this implementation. The textual column is a combination/concatenation of product title & product description
+Medical Cost Personal Dataset from kaggle was used in this implementation. 
 
 The dataset has the following features :
 
-- Data Set Characteristics: Multivariate
-- Number of Instances: 50425
-- Number of classes: 4
-- Number of Attributes: 1
-- Attribute Characteristics: Text
-- Associated Tasks: Multi-class Classification
+- age: age of primary beneficiary
+- sex: insurance contractor gender, female, male
+- bmi: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height, objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9
+- children: Number of children covered by health insurance / Number of dependents
+- smoker: Smoking
+- region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.
+- charges: Individual medical costs billed by health insurance
 
-Link to the dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification  
+Link to the dataset : https://www.kaggle.com/datasets/mirichoi0218/insurance
 
 
 ## High Level Design
