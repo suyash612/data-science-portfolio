@@ -24,5 +24,5 @@ Link to the dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-t
 1. We convert the raw text into tokens using the <code>pyspark.ml.feature.Tokenizer</code>
 2. The tokenized text is transformed into feature vectors using the count vectorizer <code>pyspark.ml.feature.CountVectorizer</code>
 3. The label is encoded to feed into the model using <code>pyspark.ml.feature.StringIndexer</code>
-4. Finally, we train a logistic regression model on the feature matrix <code>pyspark.ml.classification.LogisticRegression</code>
+4. Finally, we train a logistic regression model with cross validation & hyper-parameter tuning, on the feature matrix <code>pyspark.ml.classification.LogisticRegression</code>
 5. These sequence of steps are encapsulated within a pipeline using <code>pyspark.ml.Pipeline</code>
