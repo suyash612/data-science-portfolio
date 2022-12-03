@@ -1,15 +1,20 @@
-# Search Engine for Question & Answering system
-## Project Structure
-![image](https://user-images.githubusercontent.com/89654615/201868784-49765b44-894f-415c-a9b9-0d48d11faf08.png)
-
-## Problem Statement
-Given a question, we have to find similar questions from a repository of question & answers. A relevant example of where this is applicable is Stack overflow
-
-![image](https://user-images.githubusercontent.com/89654615/201689740-9fe362ff-282b-4f08-a09e-ba355f3f4b87.png)
+# Basic Text classification using PySpark ML Pipeline
+## Overview
+I have implemented a simple multi-class text classification solution using the pyspark machine learning pipeline component. 
 
 ## Dataset
-StackSample dataset from kaggle was used in this implementation and it contains 10% of Stack Overflow Q&A. Due to memory constriant of the local system, a sample set of 200K questions was used for experimentation
-https://www.kaggle.com/datasets/stackoverflow/stacksample
+Ecommerce text dataset from kaggle was used in this implementation : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification 
+
+The dataset has the following features :
+
+- Data Set Characteristics: Multivariate
+- Number of Instances: 50425
+- Number of classes: 4
+- Area: Computer science
+- Attribute Characteristics: Real
+- Number of Attributes: 1
+- Associated Tasks: Multi-class Classification
+
 
 
 
