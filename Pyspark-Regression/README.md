@@ -20,10 +20,10 @@ Link to the dataset : https://www.kaggle.com/datasets/mirichoi0218/insurance
 
 ## High Level Design
 
-<img width="869" alt="image" src="https://user-images.githubusercontent.com/89654615/205424415-433c4e8c-abf3-403b-8a09-a02058c067af.png">
+<img width="869" alt="image" src="https://user-images.githubusercontent.com/89654615/205430816-939e891d-9597-4d84-9e1e-5e81819f309c.png">
 
-1. We convert the raw text into tokens using the <code>pyspark.ml.feature.Tokenizer</code>
-2. The tokenized text is transformed into feature vectors using the count vectorizer <code>pyspark.ml.feature.CountVectorizer</code>
-3. The label is encoded to feed into the model using <code>pyspark.ml.feature.StringIndexer</code>
-4. Finally, we train a logistic regression model with cross validation & hyper-parameter tuning, on the feature matrix <code>pyspark.ml.classification.LogisticRegression</code>
+1. The categorical features ('sex','smoker','region') are converted into ordinal variables using <code>pyspark.ml.feature.StringIndexer</code>
+2. These feature are further transformed into one-hot encodings using <code>pyspark.ml.feature.OneHotEncoder</code>
+3. All the features are combined into a single feature column, to be fed into the model (format expected by pyspark.ml) <code>pyspark.ml.feature.VectorAssembler</code>
+4. Finally, we train a linear regression model with cross validation & hyper-parameter tuning <code>pyspark.ml.regression.LinearRegression</code>
 5. These sequence of steps are encapsulated within a pipeline using <code>pyspark.ml.Pipeline</code>
