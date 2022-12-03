@@ -3,7 +3,7 @@
 I have implemented a simple multi-class text classification solution using the pyspark machine learning pipeline component. 
 
 ## Dataset
-Ecommerce text dataset from kaggle was used in this implementation : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification 
+Ecommerce text dataset from kaggle was used in this implementation
 
 The dataset has the following features :
 
@@ -15,7 +15,7 @@ The dataset has the following features :
 - Number of Attributes: 1
 - Associated Tasks: Multi-class Classification
 
-
+Link to dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification  
 
 
 ## High Level Design
