@@ -3,9 +3,7 @@
 I have implemented a simple regression solution using the pyspark machine learning pipeline component. 
 
 ## Dataset
-Medical Cost Personal Dataset from kaggle was used in this implementation. 
-
-The dataset has the following features :
+Medical Cost Personal Dataset from kaggle was used in this implementation. The dataset has the following features :
 
 - age: age of primary beneficiary
 - sex: insurance contractor gender, female, male
