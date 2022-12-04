@@ -1,6 +1,6 @@
 # Basic Clustering using PySpark ML Pipeline
 ## Overview
-I have implemented a simple Clustering solution using the pyspark machine learning pipeline component. 
+I have implemented a simple Clustering solution using the pyspark machine learning library spark.ml 
 
 ## Dataset
 Online Retail Data Set from kaggle was used from UCI ML repository. This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail
