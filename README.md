@@ -11,3 +11,5 @@ Portfolio of data science projects completed by me for self learning purpose
     - <b>Tool stack</b> : Python, PySpark, Azure Databricks
   - [Regression using PySpark ML Pipeline](https://github.com/suyash612/data-science-portfolio/tree/main/Pyspark-Regression) : Basic implementation of a simple regression solution using pyspark
     - <b>Tool stack</b> : Python, PySpark, Azure Databricks
+  - [Clustering using PySpark](https://github.com/suyash612/data-science-portfolio/tree/main/Pyspark-Clustering) : Basic implementation of a simple Clustering solution using pyspark
+    - <b>Tool stack</b> : Python, PySpark, Azure Databricks
