@@ -1,4 +1,4 @@
-# Basic Clustering using PySpark ML Pipeline
+# Basic Clustering using PySpark ML 
 ## Overview
 I have implemented a simple Clustering solution using the pyspark machine learning library spark.ml 
 
