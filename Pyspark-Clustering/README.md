@@ -22,9 +22,3 @@ Link to the dataset : https://archive.ics.uci.edu/ml/datasets/online+retail#
 ## High Level Design
 
 <img width="945" alt="image" src="https://user-images.githubusercontent.com/89654615/205476532-c3873e21-079e-4c6f-933c-20a78a276555.png">
-
-1. We convert the raw text into tokens using the <code>pyspark.ml.feature.Tokenizer</code>
-2. The tokenized text is transformed into feature vectors using the count vectorizer <code>pyspark.ml.feature.CountVectorizer</code>
-3. The label is encoded to feed into the model using <code>pyspark.ml.feature.StringIndexer</code>
-4. Finally, we train a logistic regression model with cross validation & hyper-parameter tuning, on the feature matrix <code>pyspark.ml.classification.LogisticRegression</code>
-5. These sequence of steps are encapsulated within a pipeline using <code>pyspark.ml.Pipeline</code>
