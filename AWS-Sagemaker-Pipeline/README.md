@@ -20,8 +20,15 @@ Link to the dataset : https://archive.ics.uci.edu/ml/datasets/abalone
 
 <img width="836" alt="image" src="https://user-images.githubusercontent.com/89654615/206904331-9231c980-d996-46b7-acb6-1e65ab694733.png">
 
-1. We convert the raw text into tokens using the <code>pyspark.ml.feature.Tokenizer</code>
-2. The tokenized text is transformed into feature vectors using the count vectorizer <code>pyspark.ml.feature.CountVectorizer</code>
-3. The label is encoded to feed into the model using <code>pyspark.ml.feature.StringIndexer</code>
-4. Finally, we train a logistic regression model with cross validation & hyper-parameter tuning, on the feature matrix <code>pyspark.ml.classification.LogisticRegression</code>
-5. These sequence of steps are encapsulated within a pipeline using <code>pyspark.ml.Pipeline</code>
+1. Define a set of Pipeline parameters that can be used to parametrize a SageMaker Pipeline.
+2. Define a Processing step that performs cleaning, feature engineering, and splitting the input data into train and test data sets.
+3. Define a Training step that trains a model on the preprocessed train data set.
+4. Define a Processing step that evaluates the trained model's performance on the test dataset.
+5. Define a Conditional step that measures a condition based on output from prior steps and conditionally executes other steps.
+6. Define a Create Model step that creates a model from the model artifacts used in training.
+7. Define a Transform step that performs batch transformation based on the model that was created.
+8. Define a Register Model step that creates a model package from the estimator and model artifacts used to train the model.
+9. Define a Fail step with a customized error message indicating the cause of the execution failure.
+10. Define and create a Pipeline definition in a DAG, with the defined parameters and steps.
+11. Start a Pipeline execution and wait for execution to complete.
+
