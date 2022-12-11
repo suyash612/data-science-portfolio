@@ -18,7 +18,7 @@ Link to the dataset : https://archive.ics.uci.edu/ml/datasets/abalone
 
 ## High Level Design
 
-<img width="869" alt="image" src="https://user-images.githubusercontent.com/89654615/205424415-433c4e8c-abf3-403b-8a09-a02058c067af.png">
+<img width="836" alt="image" src="https://user-images.githubusercontent.com/89654615/206904331-9231c980-d996-46b7-acb6-1e65ab694733.png">
 
 1. We convert the raw text into tokens using the <code>pyspark.ml.feature.Tokenizer</code>
 2. The tokenized text is transformed into feature vectors using the count vectorizer <code>pyspark.ml.feature.CountVectorizer</code>
