@@ -3,18 +3,17 @@
 I have implemented a regression problem using the AWS Sagemaker pipeline, with a conditional performance threshold step. 
 
 ## Dataset
-Ecommerce text dataset from kaggle was used in this implementation. The textual column is a combination/concatenation of product title & product description
+Abalone Data Set dataset from UCI ML repository was used in this implementation. The aim for this task is to determine the age of an abalone snail from its physical measurements. The number of rings turns out to be a good approximation for age (age is rings + 1.5). We use the dataset to build a predictive model of the variable rings through these other physical measurements
 
 The dataset has the following features :
 
 - Data Set Characteristics: Multivariate
-- Number of Instances: 50425
-- Number of classes: 4
-- Number of Attributes: 1
-- Attribute Characteristics: Text
-- Associated Tasks: Multi-class Classification
+- Number of Instances: 4177
+- Number of Attributes: 8
+- Attribute Characteristics: Categorical, Integer, Real
+- Associated Tasks: Regression
 
-Link to the dataset : https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification  
+Link to the dataset : https://archive.ics.uci.edu/ml/datasets/abalone 
 
 
 ## High Level Design
