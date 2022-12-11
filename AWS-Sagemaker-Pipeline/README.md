@@ -1,6 +1,6 @@
-# AWS Sagemaker pipeline with conditional step
+# AWS SageMaker pipeline with conditional step
 ## Overview
-I have implemented a regression problem using the AWS Sagemaker pipeline, with a conditional performance threshold step. 
+I have implemented a regression problem using the AWS SageMaker pipeline, with a conditional performance threshold step. 
 
 ## Dataset
 Abalone Data Set from UCI ML repository was used in this implementation. The aim for this task is to determine the age of an abalone snail from its physical measurements. The number of rings turns out to be a good approximation for age (age is rings + 1.5). We use the dataset to build a predictive model of the variable rings through these other physical measurements
