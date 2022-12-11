@@ -1,6 +1,6 @@
-# Basic Text classification using PySpark ML Pipeline
+# AWS Sagemaker pipeline with conditional step
 ## Overview
-I have implemented a simple multi-class text classification solution using the pyspark machine learning pipeline component. 
+I have implemented a regression problem using the AWS Sagemaker pipeline, with a conditional performance threshold step. 
 
 ## Dataset
 Ecommerce text dataset from kaggle was used in this implementation. The textual column is a combination/concatenation of product title & product description
