@@ -1,34 +1,15 @@
-# AWS SageMaker pipeline with conditional step
+# Airflow Machine Learning Pipeline
 ## Overview
-I have implemented a regression problem using the AWS SageMaker pipeline, with a conditional performance threshold step. 
+I have implemented a basic Machine Learning pipeline on Apache Airflow with Docker. I have used the sample breast cancer dataset from sklearn for this implementation.
 
-## Dataset
-Abalone Data Set from UCI ML repository was used in this implementation. The aim for this task is to determine the age of an abalone snail from its physical measurements. The number of rings turns out to be a good approximation for age (age is rings + 1.5). We use the dataset to build a predictive model of the variable rings through these other physical measurements
-
-The dataset has the following features :
-
-- Data Set Characteristics: Multivariate
-- Number of Instances: 4177
-- Number of Attributes: 8
-- Attribute Characteristics: Categorical, Integer, Real
-- Associated Tasks: Regression
-
-Link to the dataset : https://archive.ics.uci.edu/ml/datasets/abalone 
-
+## Project structure
+<img width="383" alt="image" src="https://user-images.githubusercontent.com/89654615/208978639-2616982a-bcca-4dcc-8dbb-9a54089a6422.png">
 
 ## High Level Design
 
-<img width="836" alt="image" src="https://user-images.githubusercontent.com/89654615/206904331-9231c980-d996-46b7-acb6-1e65ab694733.png">
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/89654615/208975637-c3076cf0-623f-4a05-8063-be268d7a4145.png">
 
-1. Define a set of Pipeline parameters that can be used to parametrize a SageMaker Pipeline.
-2. Define a Processing step that performs cleaning, feature engineering, and splitting the input data into train and test data sets.
-3. Define a Training step that trains a model on the preprocessed train data set.
-4. Define a Processing step that evaluates the trained model's performance on the test dataset.
-5. Define a Conditional step that measures a condition based on output from prior steps and conditionally executes other steps.
-6. Define a Create Model step that creates a model from the model artifacts used in training.
-7. Define a Transform step that performs batch transformation based on the model that was created.
-8. Define a Register Model step that creates a model package from the estimator and model artifacts used to train the model.
-9. Define a Fail step with a customized error message indicating the cause of the execution failure.
-10. Define and create a Pipeline definition in a DAG, with the defined parameters and steps.
-11. Start a Pipeline execution and wait for execution to complete.
+## DAG
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/89654615/208975966-9d49d2fd-014b-4b18-9ab4-27f835bee10d.png">
+
 
