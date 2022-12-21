@@ -3,7 +3,7 @@
 I have implemented a simple multi-class text classification solution using the pyspark machine learning pipeline component. 
 
 ## Dataset
-Ecommerce text dataset from kaggle was used in this implementation. The textual column is a combination/concatenation of product title & product description
+Ecommerce text dataset from kaggle was used in this implementation. The textual column is a combination/concatenation of product title & product description. The objective is to predict which category/department the product belongs to.
 
 The dataset has the following features :
 
