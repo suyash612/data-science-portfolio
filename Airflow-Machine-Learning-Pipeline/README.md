@@ -1,6 +1,6 @@
 # Airflow Machine Learning Pipeline
 ## Overview
-I have implemented a basic Machine Learning pipeline on Apache Airflow with Docker. I have used the sample breast cancer dataset from sklearn for this implementation.
+I have implemented a Machine Learning pipeline on Apache Airflow with Docker. I have used the sample breast cancer dataset from sklearn for this implementation.
 
 ## Project structure
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/89654615/208978639-2616982a-bcca-4dcc-8dbb-9a54089a6422.png">
