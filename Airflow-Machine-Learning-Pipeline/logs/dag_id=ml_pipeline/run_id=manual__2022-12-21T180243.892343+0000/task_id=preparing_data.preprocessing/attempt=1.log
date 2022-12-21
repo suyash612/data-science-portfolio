@@ -1,0 +1,23 @@
+[2022-12-21T18:02:55.662+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ml_pipeline.preparing_data.preprocessing manual__2022-12-21T18:02:43.892343+00:00 [queued]>
+[2022-12-21T18:02:55.693+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ml_pipeline.preparing_data.preprocessing manual__2022-12-21T18:02:43.892343+00:00 [queued]>
+[2022-12-21T18:02:55.694+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T18:02:55.695+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-21T18:02:55.696+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T18:02:55.742+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): preparing_data.preprocessing> on 2022-12-21 18:02:43.892343+00:00
+[2022-12-21T18:02:55.754+0000] {standard_task_runner.py:55} INFO - Started process 345 to run task
+[2022-12-21T18:02:55.765+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ml_pipeline', 'preparing_data.preprocessing', 'manual__2022-12-21T18:02:43.892343+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/ml_pipeline.py', '--cfg-path', '/tmp/tmpa605jgiw']
+[2022-12-21T18:02:55.770+0000] {standard_task_runner.py:83} INFO - Job 53: Subtask preparing_data.preprocessing
+[2022-12-21T18:02:55.904+0000] {task_command.py:376} INFO - Running <TaskInstance: ml_pipeline.preparing_data.preprocessing manual__2022-12-21T18:02:43.892343+00:00 [running]> on host 14f73f9ae18a
+[2022-12-21T18:02:56.101+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ml_pipeline
+AIRFLOW_CTX_TASK_ID=preparing_data.preprocessing
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-21T18:02:43.892343+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-21T18:02:43.892343+00:00
+[2022-12-21T18:02:56.258+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-21T18:02:56.336+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=ml_pipeline, task_id=preparing_data.preprocessing, execution_date=20221221T180243, start_date=20221221T180255, end_date=20221221T180256
+[2022-12-21T18:02:56.461+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-21T18:02:56.540+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
