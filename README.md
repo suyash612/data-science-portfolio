@@ -5,7 +5,7 @@ Portfolio of data science projects completed by me for self learning purpose
 <b>LinkedIn</b>: https://www.linkedin.com/in/suyashpawar612
 
 ## Projects
-  - [Airflow Machine Learning Pipeline](https://github.com/suyash612/data-science-portfolio/tree/main/Airflow-Machine-Learning-Pipeline) : Implementation of a basic Machine Learning pipeline on Apache Airflow with Docker
+  - [Airflow Machine Learning Pipeline](https://github.com/suyash612/data-science-portfolio/tree/main/Airflow-Machine-Learning-Pipeline) : Implementation of a Machine Learning pipeline on Apache Airflow with Docker
     - <b>Tool stack</b> : Python, Apache Airflow, Docker
   - [AWS SageMaker Pipeline](https://github.com/suyash612/data-science-portfolio/tree/main/AWS-Sagemaker-Pipeline) : Implementation of a regression problem using the AWS SageMaker pipeline, with a conditional performance threshold step
     - <b>Tool stack</b> : Python, AWS, AWS SageMaker
